@@ -9,7 +9,10 @@ jobs:
         steps:
             - name: checkout
               uses: actions/checkout@v2
-            - run: mkdir -p build
+            - name: prepare
+              run: |
+                mkdir -p build
+                touch build/.nojekyll
             - name: pandoc
               uses: docker://pandoc/core:2.12
               with:
