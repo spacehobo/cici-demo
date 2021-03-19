@@ -1,0 +1,23 @@
+name: Deploy pages
+on:
+    push:
+        branches:
+          - master
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - run: mkdir -p build
+            - name: pandoc
+              uses: docker://pandoc/core:2.12
+              with:
+                args: >-
+                  --standalone
+                  --output=build/index.html
+                  --metadata title="Hello, Pandoc"
+                  README.md
+            - name: deploy
+              uses: JamesIves/github-pages-deploy-action@4.1.0
+              with:
+                branch: gh-pages
+                folder: build
