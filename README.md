@@ -29,7 +29,9 @@ Now we wish to run this command from a Github Action and upload the result to th
                     - name: checkout
                       uses: actions/checkout@v2
                     - name: prepare
-                      run: mkdir -p build
+                      run: |
+                        mkdir -p build
+                        touch build/.nojekyll   
                     - name: pandoc
                       uses: docker://pandoc/core:2.12
                       with:
