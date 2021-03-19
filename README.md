@@ -4,6 +4,9 @@ Example for generating Github.io pages from Readme with Pandoc. We use the follo
 - Pandoc's own [pandoc-action-example](https://github.com/pandoc/pandoc-action-example).
 - [deploy-to-github-pages](https://github.com/marketplace/actions/deploy-to-github-pages) action.
 
+The output can be viewed here: [github.io/readme-pages](https://jhidding.github.io/readme-pages)
+Github repo: [github.com/jhidding/readme-pages](https://github.com/jhidding/readme-pages)
+
 ## Pandoc
 Pandoc is the Universal document converter. We can use it to convert our README file into HTML.
 
@@ -21,7 +24,7 @@ Now we wish to run this command from a Github Action and upload the result to th
         on:
             push:
                 branches:
-                  - master
+                  - main
         jobs:
             deploy:
                 runs-on: ubuntu-latest
