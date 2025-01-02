@@ -14,7 +14,7 @@ jobs:
                 mkdir -p build
                 touch build/.nojekyll
             - name: pandoc
-              uses: docker://pandoc/core:latest-alpine
+              uses: docker://pandoc/core:latest-ubuntu
               with:
                 args: >-
                   --standalone 
