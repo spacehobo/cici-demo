@@ -1,14 +1,13 @@
 @font-face {
 	font-family: TaiChi;
-	src: url(taichi.otf);
+	src: url("taichi.otf");
+}
+body {
+	max-width: 100vw !important;
 }
 .taichi {
 	font-family: TaiChi;
 }
 @media (prefers-color-scheme: dark) {
-	body {
-		background-color: black;
-		color: white;
-	}
 	img { filter: invert(100%); }
 }

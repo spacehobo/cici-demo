@@ -17,9 +17,12 @@ jobs:
               uses: docker://pandoc/core:2.12
               with:
                 args: >-
-                  --standalone
+                  --standalone 
+                  --embed-resources
+                  --filter pandoc-sidenote
+                  --css=cici.css
                   --output=build/index.html
-                  --metadata title="Hello, Pandoc"
+                  --metadata title="Tai Chi Chuan & Chi Kung for Fitness"
                   README.md
             - name: deploy
               uses: JamesIves/github-pages-deploy-action@4.1.0

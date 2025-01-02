@@ -1,51 +1,35 @@
-# readme-pages
-Example for generating Github.io pages from Readme with Pandoc. We use the following:
 
-- Pandoc's own [pandoc-action-example](https://github.com/pandoc/pandoc-action-example).
-- [deploy-to-github-pages](https://github.com/marketplace/actions/deploy-to-github-pages) action.
+[![](img/paytheman.png)]{.marginnote}
 
-The output can be viewed here: [github.io/readme-pages](https://jhidding.github.io/readme-pages)
-Github repo: [github.com/jhidding/readme-pages](https://github.com/jhidding/readme-pages)
+# [S]{.taichi} Schedule 
 
-## Pandoc
-Pandoc is the Universal document converter. We can use it to convert our README file into HTML.
+Classes are on **Tuesdays**:
 
-        docker run pandoc/core pandoc --version
+* **7:30pm-8pm:** Intermediates/Seniors
+* **8pm-8:30pm:** Beginners/Improvers
 
-First try it locally:
+8:30pm-9pm is the Speciality section (inclusive). 
 
-        mkdir -p build
-        docker run -v $PWD:/tmp pandoc/core -s /tmp/README.md \
-                --metadata title="Hello, Pandoc" > build/index.html
+This term will cover the *Short Cane Form*.
 
-Now we wish to run this command from a Github Action and upload the result to the `gh-pages` branch.
+# [P]{.taichi} Price 
 
-        name: Deploy pages
-        on:
-            push:
-                branches:
-                  - main
-        jobs:
-            deploy:
-                runs-on: ubuntu-latest
-                steps:
-                    - name: checkout
-                      uses: actions/checkout@v2
-                    - name: prepare
-                      run: |
-                        mkdir -p build
-                        touch build/.nojekyll   
-                    - name: pandoc
-                      uses: docker://pandoc/core:2.12
-                      with:
-                        args: >-
-                          --standalone
-                          --output=build/index.html
-                          --metadata title="Hello, Pandoc"
-                          README.md
-                    - name: deploy
-                      uses: JamesIves/github-pages-deploy-action@4.1.0
-                      with:
-                        branch: gh-pages
-                        folder: build
+* £10 per session
+* £40 per month
 
+# [V]{.taichi} Venue: 
+
+[![](img/taichi-practitioner.png)]{.marginnote}
+
+| Twyford Sports Centre
+| Twyford Lane
+| Acton, London
+| W3 9PP 
+
+Zoom option available [by request](mailto:taichiattwyfordsc@yahoo.com).
+
+# [C]{.taichi} Contact
+
+* **FB:** [TaiChi @TwyfordSC](https://www.facebook.com/groups/419314689786991/) 
+* email: <taichiattwyfordsc@yahoo.com>
+* email: <ocicir@yahoo.com>
