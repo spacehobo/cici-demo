@@ -1,5 +1,6 @@
 
-![](img/paytheman.png)
+
+![](img/taichi-practitioner.png)
 
 # [S]{.taichi} Schedule 
 
@@ -14,14 +15,14 @@ This term will cover the *Short Cane Form*.
 
 # [P]{.taichi} Price 
 
+![](img/paytheman.png)
+
 * £10 per session
 * £40 per month
 
 # [V]{.taichi} Venue: 
 
-![](img/taichi-practitioner.png)
-
-| Twyford Sports Centre
+| [Twyford Sports Centre](https://www.openstreetmap.org/node/287912592)
 | Twyford Lane
 | Acton, London
 | W3 9PP 
