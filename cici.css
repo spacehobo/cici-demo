@@ -8,6 +8,9 @@ body {
 .taichi {
 	font-family: TaiChi;
 }
+img {
+	float: right;
+}
 @media (prefers-color-scheme: dark) {
 	img { filter: invert(100%); }
 }

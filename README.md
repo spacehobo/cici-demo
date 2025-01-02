@@ -1,5 +1,5 @@
 
-[![](img/paytheman.png)]{.marginnote}
+![](img/paytheman.png)
 
 # [S]{.taichi} Schedule 
 
@@ -19,7 +19,7 @@ This term will cover the *Short Cane Form*.
 
 # [V]{.taichi} Venue: 
 
-[![](img/taichi-practitioner.png)]{.marginnote}
+![](img/taichi-practitioner.png)
 
 | Twyford Sports Centre
 | Twyford Lane
