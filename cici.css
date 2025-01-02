@@ -1,0 +1,14 @@
+@font-face {
+	font-family: TaiChi;
+	src: url(taichi.otf);
+}
+.taichi {
+	font-family: TaiChi;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+		color: white;
+	}
+	img { filter: invert(100%); }
+}
