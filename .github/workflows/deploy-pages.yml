@@ -14,11 +14,12 @@ jobs:
                 mkdir -p build
                 touch build/.nojekyll
             - name: pandoc
-              uses: docker://pandoc/core:latest-ubuntu
+              uses: docker://pandoc/core:latest-alpine
               with:
                 args: >-
                   --standalone 
                   --embed-resources
+                  --css=tufte.css
                   --css=cici.css
                   --output=build/index.html
                   --metadata title="Tai Chi Chuan & Chi Kung for Fitness"
